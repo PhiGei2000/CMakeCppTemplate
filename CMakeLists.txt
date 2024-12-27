@@ -6,7 +6,7 @@ enable_testing()
 
 include_directories(./include)
 
-file(GLOB_RECURSE SOURCES src/*.cpp)
+include(sourcelist.cmake)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
